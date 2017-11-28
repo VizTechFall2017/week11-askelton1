@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mapping U.S. Marijuana Laws</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="./d3.v4.2.6.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+
+</head>
+
+<body>
+
+<!-- <button type="button" onclick="buttonClicked()" id="myButton" class="myButton"> Medicinal vs. Recreational </button>-->
+
+
+<input type="radio" id="radioButton1" name="display" value="Medicinal" onchange="radioChange(value)">
+<label for="radiobutton1">Medicinal</label>
+
+<br>
+
+<input type="radio" id="radioButton2" name="display" value="Recreational" onchange="radioChange(value)" checked>
+<label for="radiobutton2">Recreational</label>
+
+<br>
+<br>
+
+<input type="range" min="1933" max="2017" value="1" class="slider" id="mySlider" oninput="sliderMoved(value)">
+
+<div class="svgBox">
+<svg width="100%" height="100%" id="svg"></svg>
+
+</div>
+
+</body>
+
+<script src="./queue.min.js"></script>
+<script src="./index.js"></script>
+
+</html>
